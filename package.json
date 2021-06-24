@@ -1,0 +1,25 @@
+{
+  "name": "teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "Creates HTML with team profile based on user input",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamwalab/teamProfileGenerator.git"
+  },
+  "author": "Abhishek Jamwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamwalab/teamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/jamwalab/teamProfileGenerator#readme",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  }
+}
