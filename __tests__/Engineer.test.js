@@ -11,3 +11,21 @@ test('Creates objects from Employee class', () => {
     expect(engineer.getId()).toEqual(engineer.id);
     expect(engineer.getEmail()).toEqual(engineer.email);
 })
+
+test('adds GitHub username', () => {
+    const manager = new Engineer('AJ', 'TOR01', 'abc@gmail.com', 'jamwalab');
+
+    expect(manager.github).toEqual('jamwalab');
+})
+
+test('Gets GitHub username', () => {
+    const manager = new Engineer('AJ', 'TOR01', 'abc@gmail.com', 'jamwalab');
+
+    expect(manager.getGithub()).toEqual('jamwalab');
+})
+
+test('Gets employee role', () => {
+    const manager = new Engineer('AJ', 'TOR01', 'abc@gmail.com', 'jamwalab');
+
+    expect(manager.getRole()).toEqual('Engineer');
+})
