@@ -13,10 +13,10 @@ module.exports = teamData => {
             ${managerData
                 .map(manager => {
                     return `
-                        <div class='card'>
+                        <div class='card col-3'>
                             <h3 class='card-header'>
                                 <p>${manager.getName()}</p>
-                                <p>${manager.getRole()}</p>
+                                <p><span class="oi oi-person mr-2"></span>${manager.getRole()}</p>
                             </h3>
                             <div class='card-body'>
                                 <p>ID: ${manager.getId()}</p>
@@ -39,10 +39,10 @@ module.exports = teamData => {
             ${engineerData
                 .map(engineer => {
                     return `
-                        <div class='card'>
+                        <div class='card col-3'>
                             <h3 class='card-header'>
                                 <p>${engineer.getName()}</p>
-                                <p>${engineer.getRole()}</p>
+                                <p><span class="oi oi-wrench mr-2"></span>${engineer.getRole()}</p>
                             </h3>
                             <div class='card-body'>
                                 <p>ID: ${engineer.getId()}</p>
@@ -65,10 +65,10 @@ module.exports = teamData => {
             ${internData
                 .map(intern => {
                     return `
-                        <div class='card'>
+                        <div class='card col-3'>
                             <h3 class='card-header'>
                                 <p>${intern.getName()}</p>
-                                <p>${intern.getRole()}</p>
+                                <p><span class="oi oi-pencil mr-2"></span>${intern.getRole()}</p>
                             </h3>
                             <div class='card-body'>
                                 <p>ID: ${intern.getId()}</p>
@@ -84,9 +84,35 @@ module.exports = teamData => {
     }
 
     return `
-        ${managerHTML(manager)}
-        ${engineerHTML(engineer)}
-        ${internHTML(intern)}
+    <!DOCTYPE html> 
+    <html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Team</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="flex-row justify-space-between align-center pageHeader">
+                <h1 class='py-3'>My Team</h1>   
+            </div>
+        </header>
+        <main class="my-5">  
+            <section class="d-flex flex-wrap justify-content-center" id="portfolio">
+    ${managerHTML(manager)}
+    ${engineerHTML(engineer)}
+    ${internHTML(intern)}
+            </section>
+          
+        </main>
+
+    </body>
+    </html>
     `
 }
 
