@@ -18,10 +18,10 @@ test('adds GitHub username', () => {
     expect(manager.github).toEqual('jamwalab');
 })
 
-test('Gets GitHub username', () => {
+test('Gets GitHub', () => {
     const manager = new Engineer('AJ', 'TOR01', 'abc@gmail.com', 'jamwalab');
 
-    expect(manager.getGithub()).toEqual('jamwalab');
+    expect(manager.getGithub()).toEqual(expect.stringContaining('jamwalab'));
 })
 
 test('Gets employee role', () => {
