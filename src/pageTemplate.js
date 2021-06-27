@@ -115,25 +115,3 @@ module.exports = teamData => {
     </html>
     `
 }
-
-/*    const managerHTML = managerDetails => {
-        managerDetails
-            .map(({name, id, email, officeNumber}) => {
-                return `
-                <div>
-                    <h3>
-                        <p>${name}</p>
-                        <p>Manager</p>
-                    </h3>
-                    <div>
-                        <p>
-                    </div>
-                </div>
-                `
-            })
-    }
-
-    return `
-    
-    `
-}*/
