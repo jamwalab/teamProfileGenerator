@@ -29,6 +29,7 @@ To run all tests, type _"npm test"_
 
 ## Usage
 To run this app type _"node index"_. On execution it will first ask for details of the Team Manager. Details required will include name, id, email and office number. Once all the details are provided, you will have three options to select from as seen below:
+
 ![image](./src/img/threeoptions.PNG)
 
 Selecting an engineer will require you to provide below details:
