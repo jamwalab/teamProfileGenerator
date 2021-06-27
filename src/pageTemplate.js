@@ -13,7 +13,7 @@ module.exports = teamData => {
             ${managerData
                 .map(manager => {
                     return `
-                        <div class='card col-3'>
+                        <div class='card col-12 col-md-4 col-lg-3 m-3'>
                             <h3 class='card-header'>
                                 <p>${manager.getName()}</p>
                                 <p><span class="oi oi-person mr-2"></span>${manager.getRole()}</p>
@@ -39,7 +39,7 @@ module.exports = teamData => {
             ${engineerData
                 .map(engineer => {
                     return `
-                        <div class='card col-3'>
+                        <div class='card col-12 col-md-4 col-lg-3 m-3'>
                             <h3 class='card-header'>
                                 <p>${engineer.getName()}</p>
                                 <p><span class="oi oi-wrench mr-2"></span>${engineer.getRole()}</p>
@@ -65,7 +65,7 @@ module.exports = teamData => {
             ${internData
                 .map(intern => {
                     return `
-                        <div class='card col-3'>
+                        <div class='card col-12 col-md-4 col-lg-3 m-3'>
                             <h3 class='card-header'>
                                 <p>${intern.getName()}</p>
                                 <p><span class="oi oi-pencil mr-2"></span>${intern.getRole()}</p>
